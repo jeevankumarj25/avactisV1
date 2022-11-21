@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="6" failed="0" skipped="2">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-11-20T21:44:35 IST" name="Suite" finished-at="2022-11-20T21:48:30 IST" duration-ms="234724">
+    <groups>
+    </groups>
+    <test started-at="2022-11-20T21:44:35 IST" name="ManageProductTypes" finished-at="2022-11-20T21:45:16 IST" duration-ms="40382">
+      <class name="AvactisTestCases.ManageProductTypesTest">
+        <test-method is-config="true" signature="loadBrowser()[pri:0, instance:AvactisTestCases.ManageProductTypesTest@2ed2d9cb]" started-at="2022-11-20T21:44:35 IST" name="loadBrowser" finished-at="2022-11-20T21:44:41 IST" duration-ms="5476" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadBrowser -->
+        <test-method signature="AddNewProductType()[pri:0, instance:AvactisTestCases.ManageProductTypesTest@2ed2d9cb]" started-at="2022-11-20T21:44:41 IST" name="AddNewProductType" finished-at="2022-11-20T21:45:15 IST" duration-ms="34437" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddNewProductType -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AvactisTestCases.ManageProductTypesTest@2ed2d9cb]" started-at="2022-11-20T21:45:15 IST" name="tearDown" finished-at="2022-11-20T21:45:16 IST" duration-ms="403" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- AvactisTestCases.ManageProductTypesTest -->
+    </test> <!-- ManageProductTypes -->
+    <test started-at="2022-11-20T21:45:16 IST" name="ManufaturersTest" finished-at="2022-11-20T21:45:55 IST" duration-ms="38940">
+      <class name="AvactisTestCases.ManufacturersTest">
+        <test-method is-config="true" signature="loadBrowser()[pri:0, instance:AvactisTestCases.ManufacturersTest@b9b00e0]" started-at="2022-11-20T21:45:16 IST" name="loadBrowser" finished-at="2022-11-20T21:45:19 IST" duration-ms="3169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadBrowser -->
+        <test-method signature="AddManufacturer()[pri:0, instance:AvactisTestCases.ManufacturersTest@b9b00e0]" started-at="2022-11-20T21:45:19 IST" name="AddManufacturer" finished-at="2022-11-20T21:45:54 IST" duration-ms="35436" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddManufacturer -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AvactisTestCases.ManufacturersTest@b9b00e0]" started-at="2022-11-20T21:45:54 IST" name="tearDown" finished-at="2022-11-20T21:45:55 IST" duration-ms="328" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- AvactisTestCases.ManufacturersTest -->
+    </test> <!-- ManufaturersTest -->
+    <test started-at="2022-11-20T21:45:55 IST" name="Managecategories" finished-at="2022-11-20T21:46:35 IST" duration-ms="40186">
+      <class name="AvactisTestCases.ManageCategoriesTest">
+        <test-method is-config="true" signature="loadBrowser()[pri:0, instance:AvactisTestCases.ManageCategoriesTest@273e7444]" started-at="2022-11-20T21:45:55 IST" name="loadBrowser" finished-at="2022-11-20T21:45:58 IST" duration-ms="3533" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadBrowser -->
+        <test-method signature="createSubCategory()[pri:0, instance:AvactisTestCases.ManageCategoriesTest@273e7444]" started-at="2022-11-20T21:45:58 IST" name="createSubCategory" finished-at="2022-11-20T21:46:34 IST" duration-ms="36192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createSubCategory -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AvactisTestCases.ManageCategoriesTest@273e7444]" started-at="2022-11-20T21:46:34 IST" name="tearDown" finished-at="2022-11-20T21:46:35 IST" duration-ms="453" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- AvactisTestCases.ManageCategoriesTest -->
+    </test> <!-- Managecategories -->
+    <test started-at="2022-11-20T21:46:35 IST" name="ManageproductTypes" finished-at="2022-11-20T21:46:36 IST" duration-ms="1640">
+      <class name="AvactisTestCases.ManageProductsTest">
+        <test-method is-config="true" signature="loadBrowser()[pri:0, instance:AvactisTestCases.ManageProductsTest@3f6f6701]" started-at="2022-11-20T21:46:35 IST" name="loadBrowser" finished-at="2022-11-20T21:46:36 IST" duration-ms="1571" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
+at AvactisTestCases.ManageProductsTest.loadBrowser(ManageProductsTest.java:25)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadBrowser -->
+        <test-method signature="AddProduct()[pri:0, instance:AvactisTestCases.ManageProductsTest@3f6f6701]" started-at="2022-11-20T21:46:36 IST" name="AddProduct" finished-at="2022-11-20T21:46:36 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
+at AvactisTestCases.ManageProductsTest.loadBrowser(ManageProductsTest.java:25)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddProduct -->
+        <test-method signature="MoveProduct()[pri:0, instance:AvactisTestCases.ManageProductsTest@3f6f6701]" started-at="2022-11-20T21:46:36 IST" name="MoveProduct" finished-at="2022-11-20T21:46:36 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
+at AvactisTestCases.ManageProductsTest.loadBrowser(ManageProductsTest.java:25)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MoveProduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AvactisTestCases.ManageProductsTest@3f6f6701]" started-at="2022-11-20T21:46:36 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668960996976" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- AvactisTestCases.ManageProductsTest -->
+    </test> <!-- ManageproductTypes -->
+    <test started-at="2022-11-20T21:46:37 IST" name="ReviewTest" finished-at="2022-11-20T21:47:20 IST" duration-ms="43341">
+      <class name="AvactisTestCases.ReviewTest">
+        <test-method is-config="true" signature="loadBrowser()[pri:0, instance:AvactisTestCases.ReviewTest@4d5650ae]" started-at="2022-11-20T21:46:37 IST" name="loadBrowser" finished-at="2022-11-20T21:46:40 IST" duration-ms="3821" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadBrowser -->
+        <test-method signature="SearchReview()[pri:0, instance:AvactisTestCases.ReviewTest@4d5650ae]" started-at="2022-11-20T21:46:40 IST" name="SearchReview" finished-at="2022-11-20T21:47:20 IST" duration-ms="39332" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchReview -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AvactisTestCases.ReviewTest@4d5650ae]" started-at="2022-11-20T21:47:20 IST" name="tearDown" finished-at="2022-11-20T21:47:20 IST" duration-ms="184" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- AvactisTestCases.ReviewTest -->
+    </test> <!-- ReviewTest -->
+    <test started-at="2022-11-20T21:47:20 IST" name="orderTest" finished-at="2022-11-20T21:48:00 IST" duration-ms="39984">
+      <class name="AvactisTestCases.OrdersTest">
+        <test-method is-config="true" signature="loadBrowser()[pri:0, instance:AvactisTestCases.OrdersTest@3012646b]" started-at="2022-11-20T21:47:20 IST" name="loadBrowser" finished-at="2022-11-20T21:47:23 IST" duration-ms="3575" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadBrowser -->
+        <test-method signature="UpdateOrderStatus()[pri:0, instance:AvactisTestCases.OrdersTest@3012646b]" started-at="2022-11-20T21:47:23 IST" name="UpdateOrderStatus" finished-at="2022-11-20T21:48:00 IST" duration-ms="36216" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UpdateOrderStatus -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AvactisTestCases.OrdersTest@3012646b]" started-at="2022-11-20T21:48:00 IST" name="tearDown" finished-at="2022-11-20T21:48:00 IST" duration-ms="187" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- AvactisTestCases.OrdersTest -->
+    </test> <!-- orderTest -->
+    <test started-at="2022-11-20T21:48:00 IST" name="LoginPages" finished-at="2022-11-20T21:48:30 IST" duration-ms="30114">
+      <class name="AvactisTestCases.LoginPageTest">
+        <test-method is-config="true" signature="loadBrowser()[pri:0, instance:AvactisTestCases.LoginPageTest@4686afc2]" started-at="2022-11-20T21:48:00 IST" name="loadBrowser" finished-at="2022-11-20T21:48:03 IST" duration-ms="3470" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadBrowser -->
+        <test-method signature="AdminSignIn()[pri:0, instance:AvactisTestCases.LoginPageTest@4686afc2]" started-at="2022-11-20T21:48:03 IST" name="AdminSignIn" finished-at="2022-11-20T21:48:30 IST" duration-ms="26460" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AdminSignIn -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AvactisTestCases.LoginPageTest@4686afc2]" started-at="2022-11-20T21:48:30 IST" name="tearDown" finished-at="2022-11-20T21:48:30 IST" duration-ms="181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- AvactisTestCases.LoginPageTest -->
+    </test> <!-- LoginPages -->
+  </suite> <!-- Suite -->
+</testng-results>

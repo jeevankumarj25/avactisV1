@@ -2,6 +2,8 @@ package AvactisTestCases;
 
 import java.io.IOException;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
@@ -15,9 +17,10 @@ import AvactisPageObjects.OrdersPage;
 import AvactisResources.Base;
 
 public class OrdersTest extends Base {
+	public static  Logger log = LogManager.getLogger(Base.class.getName());
 
 	
-	@BeforeTest()
+	@BeforeTest(alwaysRun=true)
 	public void loadBrowser() throws IOException, InterruptedException 
 	{
 		initializedriver();
@@ -25,7 +28,7 @@ public class OrdersTest extends Base {
 		driver.manage().window().maximize();
 	}
 	
-	@Test()
+	@Test(groups={"Smoke","Regression"})
 	public void UpdateOrderStatus() 
 	{
 		LoginPage lp= new LoginPage();
@@ -41,9 +44,10 @@ public class OrdersTest extends Base {
 		paymentStatus.selectByVisibleText(prop.getProperty("paymentStatus"));
 		op.clickonUpdateBtn();
 		Assert.assertEquals(op.validateUpdateStatus(), "Order data has been updated");
+		log.info("order status has been updated");
 	}
 	
-	@AfterTest()
+	@AfterTest(alwaysRun=true)
 	public void tearDown() 
 	{
 		driver.quit();

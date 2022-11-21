@@ -1,0 +1,5 @@
+23:31:22.356 [main] INFO  AvactisResources.Base - initialized the driver
+23:31:24.483 [main] INFO  AvactisResources.Base - fetched the url
+23:31:51.548 [main] INFO  AvactisResources.Base - admin sign in successfully completed
+23:31:51.553 [AsyncHttpClient-1-6] TRACE io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder - Encoding WebSocket Frame opCode=8 length=26
+23:31:51.839 [main] INFO  AvactisResources.Base - closed the browser

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="RegressionTest">
+	<groups>
+		<run>
+			<include name="Regression"></include>
+		</run>
+	</groups>
+	<test name="ManageProductTypes">
+		<classes>
+			<class name="AvactisTestCases.ManageProductTypesTest" />
+		</classes>
+	</test>
+
+	<test name="ManufaturersTest">
+		<classes>
+			<class name="AvactisTestCases.ManufacturersTest" />
+		</classes>
+	</test>
+
+	<test name="Managecategories">
+		<classes>
+			<class name="AvactisTestCases.ManageCategoriesTest" />
+		</classes>
+	</test>
+
+	<test name="ManageproductTypes">
+		<classes>
+			<class name="AvactisTestCases.ManageProductsTest" />
+		</classes>
+	</test>
+
+	<test name="ReviewTest">
+		<classes>
+			<class name="AvactisTestCases.ReviewTest" />
+		</classes>
+	</test>
+
+	<test name="orderTest">
+		<classes>
+			<class name="AvactisTestCases.OrdersTest" />
+		</classes>
+	</test>
+
+	<test name="LoginPages">
+		<classes>
+			<class name="AvactisTestCases.LoginPageTest" />
+		</classes>
+	</test>
+</suite> <!-- Suite -->

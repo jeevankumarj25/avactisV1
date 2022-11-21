@@ -3,12 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="AvactisTestCases.OrdersTest">
+      <class name="AvactisTestCases.CustomerspageTest">
         <methods>
           <include name="loadBrowser"/>
-          <include name="UpdateOrderStatus"/>
+          <include name="ExportCsv"/>
+          <include name="tearDown"/>
+          <include name="CreateCustmersGrp"/>
         </methods>
-      </class> <!-- AvactisTestCases.OrdersTest -->
+      </class> <!-- AvactisTestCases.CustomerspageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

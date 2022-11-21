@@ -3,6 +3,8 @@ package AvactisTestCases;
 import java.io.IOException;
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -17,15 +19,18 @@ import AvactisPageObjects.ManageProductspage;
 import AvactisResources.Base;
 
 public class ManageProductsTest extends Base {
-	WebDriver driver;
-	@BeforeTest()
+	public static  Logger log = LogManager.getLogger(Base.class.getName());
+
+	@BeforeTest(alwaysRun = true)
 	public void loadBrowser() throws IOException, InterruptedException 
 	{
 		initializedriver();
+		log.info("initialized the driver");
 		driver.get(prop.getProperty("url"));
+		log.info("Fetched the url");
 		driver.manage().window().maximize();
 	}
-	@Test()
+	@Test(groups={"Smoke","Regression","Sanity"})
 	public void AddProduct() throws InterruptedException 
 	{
 		LoginPage loginpage= new LoginPage();
@@ -42,8 +47,9 @@ public class ManageProductsTest extends Base {
 		Thread.sleep(1000L);
 		mpp.enterProductprice(prop.getProperty("productPrice"));
 		mpp.ClickonSaveBtn();	
+		log.info("Successfully added the product");
 	}
-	@Test()
+	@Test(groups={"Regression"})
 	public void MoveProduct() throws InterruptedException  
 	{
 		try {
@@ -63,13 +69,14 @@ public class ManageProductsTest extends Base {
 
 		}
 		catch(Exception e) 
-		{
-			e.printStackTrace();
-		}
-		
+	  {
+		e.printStackTrace();
+	  }
+		log.info("successfully moved the product");
 	}
-	@AfterTest()
+	@AfterTest(alwaysRun=true)
 	public void tearDown() {
 		driver.quit();
+		log.info("closed the browser successfully");
 	}
 }

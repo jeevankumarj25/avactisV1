@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SmokeTest]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="ManageProductTypes(failed)">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="AvactisTestCases.ManageProductTypesTest">
+        <methods>
+          <include name="loadBrowser"/>
+          <include name="tearDown"/>
+          <include name="AddNewProductType"/>
+        </methods>
+      </class> <!-- AvactisTestCases.ManageProductTypesTest -->
+    </classes>
+  </test> <!-- ManageProductTypes(failed) -->
+  <test thread-count="5" name="ManufaturersTest(failed)">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="AvactisTestCases.ManufacturersTest">
+        <methods>
+          <include name="AddManufacturer"/>
+          <include name="tearDown"/>
+          <include name="loadBrowser"/>
+        </methods>
+      </class> <!-- AvactisTestCases.ManufacturersTest -->
+    </classes>
+  </test> <!-- ManufaturersTest(failed) -->
+  <test thread-count="5" name="Managecategories(failed)">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="AvactisTestCases.ManageCategoriesTest">
+        <methods>
+          <include name="createSubCategory"/>
+          <include name="loadBrowser"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- AvactisTestCases.ManageCategoriesTest -->
+    </classes>
+  </test> <!-- Managecategories(failed) -->
+  <test thread-count="5" name="ManageproductTypes(failed)">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="AvactisTestCases.ManageProductsTest">
+        <methods>
+          <include name="loadBrowser"/>
+          <include name="tearDown"/>
+          <include name="AddProduct"/>
+        </methods>
+      </class> <!-- AvactisTestCases.ManageProductsTest -->
+    </classes>
+  </test> <!-- ManageproductTypes(failed) -->
+  <test thread-count="5" name="orderTest(failed)">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="AvactisTestCases.OrdersTest">
+        <methods>
+          <include name="loadBrowser"/>
+          <include name="tearDown"/>
+          <include name="UpdateOrderStatus"/>
+        </methods>
+      </class> <!-- AvactisTestCases.OrdersTest -->
+    </classes>
+  </test> <!-- orderTest(failed) -->
+  <test thread-count="5" name="LoginPages(failed)">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="AvactisTestCases.LoginPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="loadBrowser"/>
+          <include name="AdminSignIn"/>
+        </methods>
+      </class> <!-- AvactisTestCases.LoginPageTest -->
+    </classes>
+  </test> <!-- LoginPages(failed) -->
+</suite> <!-- Failed suite [SmokeTest] -->

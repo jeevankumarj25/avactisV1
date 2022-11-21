@@ -1,11 +1,14 @@
 package AvactisTestCases;
 
 import java.io.IOException;
+
 import java.time.Duration;
 import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -19,25 +22,27 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+
 import AvactisPageObjects.CustomersPage;
 import AvactisPageObjects.LoginPage;
 import AvactisResources.Base;
-import AvactisResources.CommonMethods;
 
 public class CustomerspageTest extends Base {
-	
+	public static  Logger log = LogManager.getLogger(Base.class.getName());
 	CustomersPage cp;
 
-	@BeforeTest()
+	@BeforeTest(alwaysRun=true)
 	public void loadBrowser() throws IOException, InterruptedException {
 
 		initializedriver();
+		log.info("Launched the Browser");
 		driver.get(prop.getProperty("url"));
+		log.info("Fetched the url");
 		driver.manage().window().maximize();
 
 	}
 
-	@Test()
+	@Test(groups={"Smoke","Regression"})
 	public void CreateCustmersGrp() {
 		LoginPage loginpage = new LoginPage();
 		loginpage.login(prop.getProperty("username"), prop.getProperty("Password"));
@@ -50,9 +55,10 @@ public class CustomerspageTest extends Base {
 		cp.createGrpAddBtn();
 		cp.CloseCreateGrp();
 		driver.navigate().refresh();
+		log.info("Customer grp has successfully created");
 	}
 
-	@Test()
+	@Test(groups={"Smoke","Regression","Sanity"})
 	public void ExportCsv() throws InterruptedException {
 		cp.clickOnExport();
 		driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@class='cboxIframe']")));
@@ -63,9 +69,11 @@ public class CustomerspageTest extends Base {
 		Thread.sleep(3000L);
 		cp.ClosePopup();
 		driver.navigate().refresh();
+		log.info("csv has Exported succesfully");
+
 	}
 
-	@Test()
+	@Test(groups={"Regression"})
 	public void ResetPassword() throws Exception {
 
 		try {
@@ -83,6 +91,8 @@ public class CustomerspageTest extends Base {
 							By.xpath("//span[text()='Account passwords reset successfully.']")));
 					Assert.assertEquals("Account passwords reset successfully.", cp.validatepassReset());
 					driver.navigate().refresh();
+					log.info("Password has been reset successfully");
+
 				
 				}
 			}
@@ -93,7 +103,7 @@ public class CustomerspageTest extends Base {
 		}
 	}
 	
-	@Test()
+	@Test(groups={"Smoke","Regression","Sanity"})
 	public void activatePassword() 
 	{
 		try {
@@ -122,7 +132,7 @@ public class CustomerspageTest extends Base {
 		
 	}
 	
-	@AfterTest()
+	@AfterTest(alwaysRun=true)
 	public void tearDown() 
 	{
 		driver.quit();

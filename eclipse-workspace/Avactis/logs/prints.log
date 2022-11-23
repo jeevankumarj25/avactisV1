@@ -1,4 +1,5 @@
-12:57:48.132 [main] INFO  AvactisResources.Base - fetched the url
-12:58:13.265 [main] INFO  AvactisResources.Base - admin sign in successfully completed
-12:58:13.272 [AsyncHttpClient-1-6] TRACE io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder - Encoding WebSocket Frame opCode=8 length=26
-12:58:13.509 [main] INFO  AvactisResources.Base - closed the browser
+19:28:34.330 [main] INFO  AvactisResources.Base - initialized the driver
+19:28:35.965 [main] INFO  AvactisResources.Base - fetched the url
+19:29:01.113 [main] INFO  AvactisResources.Base - admin sign in successfully completed
+19:29:01.116 [AsyncHttpClient-1-6] TRACE io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder - Encoding WebSocket Frame opCode=8 length=26
+19:29:01.240 [main] INFO  AvactisResources.Base - closed the browser
